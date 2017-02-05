@@ -1,0 +1,22 @@
+<nav class="topnav">
+  <ul class="ul-topnav-link-list" id="myTopnav">
+    <li [hidden]="!this.loginService.logged" >
+      <a [routerLink] = "'/front'">Front page</a>
+    </li>
+    <li [hidden]="this.loginService.logged">
+      <a [routerLink] = "'/login'">Login</a>
+    </li>
+    <li [hidden]="this.loginService.logged">
+      <a [routerLink] = "'/register'">Register</a>
+    </li>
+    <li [hidden]="!this.loginService.logged">
+      <a [routerLink] ="'/upload'">Upload</a>
+    </li>
+    <li [hidden]="!this.loginService.logged">
+      <app-logout></app-logout>
+    </li>
+    <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" (click)="myFunction();">☰</a>
+  </li>
+  </ul>
+</nav>

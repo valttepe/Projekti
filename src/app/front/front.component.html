@@ -1,0 +1,31 @@
+<h3>
+  Front</h3>
+<ul>
+  <article>
+    <li class="li-item" *ngFor="let image of images">
+      <div class="image">
+        <img [src]="'http://media.mw.metropolia.fi/wbma/uploads/'+image.filename">
+      </div>
+
+      <div class="description">
+        <p>
+          Description text goes here
+        </p>
+        <div class="tags">
+          <p>
+            Tags goes here
+          </p>
+        </div>
+
+        <div class="rating">
+          <p>
+            Rating goes here
+          </p>
+        </div>
+      </div>
+
+
+    </li>
+
+  </article>
+</ul>

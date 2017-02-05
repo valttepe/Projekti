@@ -1,0 +1,12 @@
+.sidenav {
+    float:left;
+    width: 25%;
+    background-color: #FFC107
+    
+}
+
+@media only screen and (max-width: 720px) {
+    .sidenav {
+        display: none;
+    }
+}

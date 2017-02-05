@@ -1,0 +1,68 @@
+.topnav {
+    height: 75px;
+    background-color: #FFBF00;
+}
+
+// MENU valikko toistaiseksi vaihdetaan jossain vaiheessa ionic juttuihin..
+
+.ul-topnav-link-list {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+
+    
+}
+
+
+.ul-topnav-link-list li a {
+  display: none;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ .ul-topnav-link-list li a:hover {background-color: #555;}
+
+.ul-topnav-link-list li.icon {display: none;}
+
+@media screen and (max-width:720px) {
+  .ul-topnav-link-list li {
+      display: none;
+      background-color: #4646E6;
+      }
+  .ul-topnav-link-list li a{
+      display: inline-block;
+  }
+  .ul-topnav-link-list li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .ul-topnav-link-list.responsive {
+      position: relative;
+      background-color: #4646E6;
+      }
+  .ul-topnav-link-list.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .ul-topnav-link-list.responsive li {
+    float: none;
+    display: inline;
+    background-color: #4646E6;
+    
+  }
+  .ul-topnav-link-list.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+//MENU asetukset loppuu tähän
